@@ -11,12 +11,14 @@
 \usepackage[english]{babel}
 \usepackage[autostyle]{csquotes}
 \usepackage{placeins}
+\usepackage{hyperref}
 \usepackage[backend=biber]{biblatex}
 \bibliography{./lecture_13_biblio.bib}
 
 \usepackage{graphics}
 \usepackage{graphicx}
 \usepackage{subcaption}
+\usepackage{amsmath}
 \usepackage{amsmath}
 \usepackage{float}
 \setlength{\oddsidemargin}{0.25 in}
@@ -28,6 +30,8 @@
 \setlength{\parindent}{0 in}
 \setlength{\parskip}{0.1 in}
 
+\DeclareMathOperator*{\argmax}{argmax}
+\DeclareMathOperator*{\argmin}{argmin}
 
 \newcounter{lecnum}
 \renewcommand{\thepage}{\thelecnum-\arabic{page}}
@@ -68,19 +72,21 @@
 %modify this
 \lecture{13}{SLAM I: Non-parametric Localization and EKF SLAM}{}
 
-\section{Introduction}
+\input{1.introduction}
 
-%% ---
-% ADD NOTES HERE
+\input{2.non.parametric.localization}
 
+\input{3.slam}
 
-
-%% ---
+\input{4.further.references.tex}
+%%%%
+% Note: Please create a new page for each section. It makes compiling easier. You can comment out sections if you want to quickly compile only certain parts
+%%%%
 
 \printbibliography
 
 \subsubsection*{Contributors}
-Winter 2019: [Your Names Here] \\
+Winter 2019: Tariq Zahroof, Ashar Alam, Andre Cornman, Ryan Cohen, Rohun Kulkarni, Jerin Joseph, Thomas Trzpit\\
 Winter 2018: Malavika Bindhi, Charles Preston Hale, Arthur Ji, Jonathan Lacotte, Hongyi Zhao, Jerry Zheng
 
 \end{document}

@@ -1,0 +1,7 @@
+\section{Introduction}
+
+This lecture continues the discussion of localization with non-parametric localization. Afterwards, we transition into the topic of Simultaneous Localization and Mapping (SLAM).
+
+Section 13.2 discusses non-parametric localization, which is more apt for problem setups when the Gaussian assumptions for the probability distributions no-longer hold. Overall, the non-parametric approach is quite similar to the parametric solution, but uses a histogram of particles to represent the belief instead. Specifically, we will be covering Monte Carlo Localization (MCL) as an example of non-parametric localization.
+
+Section 13.3 begins our discussion on SLAM, an algorithm to both find the path for a robot and acquire a map of an unknown environment. As the name implies, SLAM algorithms include both the robot's pose AND a map of the environment in the state. In this lecture, we will cover EKF SLAM, a parametric SLAM approach that extends from EKF localization. EKF SLAM maintains a Gaussian assumption for the approximation of belief and uses a feature-based map to identify the environment.
